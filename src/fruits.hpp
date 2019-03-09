@@ -5,7 +5,7 @@ enum Fruits {
     LEMON
 };
 
-enum MathematicalFruits {
+enum class MathematicalFruits {
     TWO_APPLES = 2*APPLE,
     LEMON_PLUS_ORANGE  = LEMON + ORANGE
 };

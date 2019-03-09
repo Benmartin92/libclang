@@ -23,7 +23,7 @@ int main() {
   CXIndex index = clang_createIndex(0, 0);
   CXTranslationUnit translationUnit = nullptr;
   CXErrorCode errorCode = clang_parseTranslationUnit2(
-      index, "src/fruits.h", nullptr, 0, nullptr, 0,
+      index, "src/fruits.hpp", nullptr, 0, nullptr, 0,
       CXTranslationUnit_KeepGoing, &translationUnit);
   if (translationUnit) {
     std::cout << "Translation unit has been created." << std::endl;
