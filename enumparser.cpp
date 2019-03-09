@@ -1,9 +1,6 @@
-#include <llvm/ADT/DenseSet.h>
+#include <clang-c/Index.h>
 
-#include "stdio.h"
-
-int main() {
-    printf("OK\n");
-    return 0;
+int main()
+{
+	CXIndex index = clang_createIndex(0, 0);
 }
-
